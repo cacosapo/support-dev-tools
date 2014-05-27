@@ -1,4 +1,4 @@
-package br.com.samsung.utils;
+package com.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
