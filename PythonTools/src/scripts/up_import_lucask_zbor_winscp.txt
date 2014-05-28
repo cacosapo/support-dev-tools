@@ -1,0 +1,9 @@
+open sftp://pcrflab30:openet123@zbor
+option transfer ascii
+option batch on
+option confirm off
+option echo on
+lcd C:\eclipse\workspace\cpm30\acceptance.ciscoR6\LTE\POL-CORE\POL-CORE-0%1%
+cd /appl/pcrflab30/acceptance/LTE/POL-CORE/POL-CORE-0%1%
+put inputAvs.cfg
+exit

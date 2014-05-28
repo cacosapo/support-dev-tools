@@ -1,0 +1,8 @@
+open sftp://tester3:openet123@zbor
+option transfer ascii
+option batch on
+option confirm off
+lcd %1%
+cd %2%
+put %3%
+exit

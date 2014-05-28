@@ -1,0 +1,39 @@
+./atf.sh atf.roger.cpm40.properties LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-033/ LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-034/ LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-035/
+
+dos2unix POL-MRC-ST-SST-029/inputAvs.cfg.bkp > POL-MRC-ST-SST-029/inputAvs.cfg
+dos2unix POL-MRC-ST-SST-030/inputAvs.cfg.bkp > POL-MRC-ST-SST-030/inputAvs.cfg
+dos2unix POL-MRC-ST-SST-031/inputAvs.cfg.bkp > POL-MRC-ST-SST-031/inputAvs.cfg
+dos2unix POL-MRC-ST-SST-032/inputAvs.cfg.bkp > POL-MRC-ST-SST-032/inputAvs.cfg
+dos2unix POL-MRC-ST-SST-033/inputAvs.cfg.bkp > POL-MRC-ST-SST-033/inputAvs.cfg
+dos2unix POL-MRC-ST-SST-034/inputAvs.cfg.bkp > POL-MRC-ST-SST-034/inputAvs.cfg
+dos2unix POL-MRC-ST-SST-035/inputAvs.cfg.bkp > POL-MRC-ST-SST-035/inputAvs.cfg
+
+rm POL-MRC-ST-SST-033/inputAvs.cfg.bkp
+rm POL-MRC-ST-SST-034/inputAvs.cfg.bkp
+rm POL-MRC-ST-SST-035/inputAvs.cfg.bkp
+
+dos2unix POL-MRC-ST-SST-020/inputAvs.cfg.bkp POL-MRC-ST-SST-020/inputAvs.cfg
+
+dos2unix LTE22-001/inputAvs.cfg.bkp > LTE22-001/inputAvs.cfg
+dos2unix LTE22-003/inputAvs.cfg.bkp > LTE22-003/inputAvs.cfg
+dos2unix LTE22-007/inputAvs.cfg.bkp > LTE22-007/inputAvs.cfg
+dos2unix LTE22-008/inputAvs.cfg.bkp > LTE22-008/inputAvs.cfg
+dos2unix LTE22-009/inputAvs.cfg.bkp > LTE22-009/inputAvs.cfg
+
+dos2unix PHONE/POL-CORE/POL-CORE-018/inputAvs.cfg.bkp > PHONE/POL-CORE/POL-CORE-018/inputAvs.cfg
+
+dos2unix LTE/POL-CORE/POL-CORE-027/inputAvs.cfg.bkp > LTE/POL-CORE/POL-CORE-027/inputAvs.cfg
+
+./atf.sh atf.lucask.cpm40.properties LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-035
+
+./atf.sh atf.lucask.cpm40.properties LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-037 LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-039 LTE/POL-MRC-ST-SST/POL-MRC-ST-SST-040
+
+cvs checkout -d acceptance customer/attm/cpm40/acceptance.ciscoR7
+cvs checkout -d acceptance customer/attm/cpm31/acceptance.ciscoR6  
+
+:pserver:lkanadani@lego:/export/home/cvs
+
+diff ../acceptance/ ~tester2/acceptance/
+
+CFG_20120123_1
+CFG_20120105_1 

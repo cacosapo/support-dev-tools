@@ -1,0 +1,11 @@
+/config.properties
+/constants
+/crawler
+/filehandle
+/httphandle
+/main
+/oshandle
+/others
+/parser
+/propertieshandle
+/regexhandle
